@@ -1,0 +1,322 @@
+{
+  "best_model": "Gradient Boosting",
+  "class_names": [
+    "Low Risk",
+    "Moderate Risk",
+    "High Risk"
+  ],
+  "features": [
+    "energy_kcal",
+    "sugar_g",
+    "sodium_mg",
+    "saturated_fat_g",
+    "trans_fat_g",
+    "protein_g",
+    "fiber_g",
+    "additives_count",
+    "artificial_colors_count",
+    "artificial_sweeteners_count",
+    "preservatives_count",
+    "is_suspected_adulterant",
+    "sugar_to_fiber_ratio",
+    "additive_density",
+    "bad_fat_index"
+  ],
+  "sample_count": 3500,
+  "train_samples": 2800,
+  "test_samples": 700,
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.9857,
+      "precision": 0.9859,
+      "recall": 0.9857,
+      "f1_score": 0.9857,
+      "confusion_matrix": [
+        [
+          297,
+          0,
+          0
+        ],
+        [
+          7,
+          194,
+          0
+        ],
+        [
+          0,
+          3,
+          199
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 1.0,
+          "recall": 0.9851485148514851,
+          "f1-score": 0.9925187032418953,
+          "support": 202.0
+        },
+        "Moderate Risk": {
+          "precision": 0.9769736842105263,
+          "recall": 1.0,
+          "f1-score": 0.9883527454242929,
+          "support": 297.0
+        },
+        "High Risk": {
+          "precision": 0.9847715736040609,
+          "recall": 0.9651741293532339,
+          "f1-score": 0.9748743718592965,
+          "support": 201.0
+        },
+        "accuracy": 0.9857142857142858,
+        "macro avg": {
+          "precision": 0.9872484192715291,
+          "recall": 0.9834408814015729,
+          "f1-score": 0.9852486068418282,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.985857529292775,
+          "recall": 0.9857142857142858,
+          "f1-score": 0.9856847031279949,
+          "support": 700.0
+        }
+      },
+      "feature_importance": {
+        "energy_kcal": 0.4572,
+        "sugar_g": 2.106,
+        "sodium_mg": 2.2183,
+        "saturated_fat_g": 0.4186,
+        "trans_fat_g": 0.7584,
+        "protein_g": 0.8155,
+        "fiber_g": 0.9695,
+        "additives_count": 1.4379,
+        "artificial_colors_count": 1.2428,
+        "artificial_sweeteners_count": 0.2495,
+        "preservatives_count": 1.0162,
+        "is_suspected_adulterant": 2.3146,
+        "sugar_to_fiber_ratio": 0.5357,
+        "additive_density": 1.2678,
+        "bad_fat_index": 0.5027
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.9943,
+      "precision": 0.9943,
+      "recall": 0.9943,
+      "f1_score": 0.9943,
+      "confusion_matrix": [
+        [
+          297,
+          0,
+          0
+        ],
+        [
+          0,
+          199,
+          2
+        ],
+        [
+          0,
+          2,
+          200
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 0.9900990099009901,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9900990099009901,
+          "support": 202.0
+        },
+        "Moderate Risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 297.0
+        },
+        "High Risk": {
+          "precision": 0.9900497512437811,
+          "recall": 0.9900497512437811,
+          "f1-score": 0.9900497512437811,
+          "support": 201.0
+        },
+        "accuracy": 0.9942857142857143,
+        "macro avg": {
+          "precision": 0.9933829203815904,
+          "recall": 0.9933829203815904,
+          "f1-score": 0.9933829203815904,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.9942857142857143,
+          "recall": 0.9942857142857143,
+          "f1-score": 0.9942857142857143,
+          "support": 700.0
+        }
+      },
+      "feature_importance": {
+        "energy_kcal": 0.0003,
+        "sugar_g": 0.0443,
+        "sodium_mg": 0.0514,
+        "saturated_fat_g": 0.0,
+        "trans_fat_g": 0.0056,
+        "protein_g": 0.0,
+        "fiber_g": 0.0,
+        "additives_count": 0.0,
+        "artificial_colors_count": 0.0,
+        "artificial_sweeteners_count": 0.0,
+        "preservatives_count": 0.0,
+        "is_suspected_adulterant": 0.3847,
+        "sugar_to_fiber_ratio": 0.0005,
+        "additive_density": 0.5042,
+        "bad_fat_index": 0.0089
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.9971,
+      "precision": 0.9972,
+      "recall": 0.9971,
+      "f1_score": 0.9971,
+      "confusion_matrix": [
+        [
+          297,
+          0,
+          0
+        ],
+        [
+          0,
+          201,
+          0
+        ],
+        [
+          0,
+          2,
+          200
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 1.0,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9950248756218906,
+          "support": 202.0
+        },
+        "Moderate Risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 297.0
+        },
+        "High Risk": {
+          "precision": 0.9901477832512315,
+          "recall": 1.0,
+          "f1-score": 0.995049504950495,
+          "support": 201.0
+        },
+        "accuracy": 0.9971428571428571,
+        "macro avg": {
+          "precision": 0.9967159277504104,
+          "recall": 0.9966996699669967,
+          "f1-score": 0.9966914601907951,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.9971710063335679,
+          "recall": 0.9971428571428571,
+          "f1-score": 0.9971428219581019,
+          "support": 700.0
+        }
+      },
+      "feature_importance": {
+        "energy_kcal": 0.0175,
+        "sugar_g": 0.0301,
+        "sodium_mg": 0.052,
+        "saturated_fat_g": 0.0235,
+        "trans_fat_g": 0.0722,
+        "protein_g": 0.0187,
+        "fiber_g": 0.0221,
+        "additives_count": 0.1493,
+        "artificial_colors_count": 0.069,
+        "artificial_sweeteners_count": 0.0001,
+        "preservatives_count": 0.0967,
+        "is_suspected_adulterant": 0.1825,
+        "sugar_to_fiber_ratio": 0.0248,
+        "additive_density": 0.2011,
+        "bad_fat_index": 0.0406
+      }
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9986,
+      "precision": 0.9986,
+      "recall": 0.9986,
+      "f1_score": 0.9986,
+      "confusion_matrix": [
+        [
+          297,
+          0,
+          0
+        ],
+        [
+          0,
+          200,
+          1
+        ],
+        [
+          0,
+          0,
+          202
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 0.9950738916256158,
+          "recall": 1.0,
+          "f1-score": 0.9975308641975309,
+          "support": 202.0
+        },
+        "Moderate Risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 297.0
+        },
+        "High Risk": {
+          "precision": 1.0,
+          "recall": 0.9950248756218906,
+          "f1-score": 0.9975062344139651,
+          "support": 201.0
+        },
+        "accuracy": 0.9985714285714286,
+        "macro avg": {
+          "precision": 0.9983579638752053,
+          "recall": 0.9983416252072969,
+          "f1-score": 0.9983456995371652,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.9985784658691061,
+          "recall": 0.9985714285714286,
+          "f1-score": 0.9985714109787259,
+          "support": 700.0
+        }
+      },
+      "feature_importance": {
+        "energy_kcal": 0.0,
+        "sugar_g": 0.039,
+        "sodium_mg": 0.0418,
+        "saturated_fat_g": 0.0081,
+        "trans_fat_g": 0.0062,
+        "protein_g": 0.0,
+        "fiber_g": 0.0,
+        "additives_count": 0.0407,
+        "artificial_colors_count": 0.0,
+        "artificial_sweeteners_count": 0.0,
+        "preservatives_count": 0.0903,
+        "is_suspected_adulterant": 0.4687,
+        "sugar_to_fiber_ratio": 0.0003,
+        "additive_density": 0.2872,
+        "bad_fat_index": 0.0176
+      }
+    }
+  }
+}
