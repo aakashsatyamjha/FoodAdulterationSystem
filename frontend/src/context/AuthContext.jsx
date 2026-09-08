@@ -25,9 +25,9 @@ export function AuthProvider({ children }) {
       if (savedUser) {
         return JSON.parse(savedUser);
       }
-      return DEFAULT_USER; // Default logged in for seamless demo experience
+      return null;
     } catch {
-      return DEFAULT_USER;
+      return null;
     }
   });
 

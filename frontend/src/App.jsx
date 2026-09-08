@@ -26,9 +26,9 @@ function AppContent() {
     try {
       const saved = sessionStorage.getItem('foodguard_current_view');
       if (saved) return saved;
-      return 'app';
+      return 'auth';
     } catch {
-      return 'app';
+      return 'auth';
     }
   });
   const [authInitialMode, setAuthInitialMode] = useState('login'); // 'login' | 'signup'
